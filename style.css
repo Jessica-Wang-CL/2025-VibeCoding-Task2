@@ -1,0 +1,166 @@
+/* CSS:BASE-START */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #0a1a2b;
+  color: #e0e0e0;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* CSS:BASE-END */
+
+/* CSS:HERO-START */
+.section-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 0;
+  background: url("https://source.unsplash.com/1200x800/?developer,laptop")
+    center/cover no-repeat;
+  color: #ffffff;
+}
+.section-hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.section-hero p {
+  max-width: 600px;
+  margin: 0.5rem 0;
+}
+/* CSS:HERO-END */
+
+/* CSS:ABOUT-START */
+.section-about {
+  padding: 4rem 0;
+  background-color: #0f2233;
+}
+.section-about .section-title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+.section-about p {
+  margin-bottom: 1rem;
+}
+/* CSS:ABOUT-END */
+
+/* CSS:SKILLS-START */
+.section-skills {
+  padding: 4rem 0;
+  background-color: #142b44;
+}
+.section-skills .section-title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+.section-skills p {
+  margin-bottom: 1rem;
+}
+/* CSS:SKILLS-END */
+
+/* CSS:PROJECTS-START */
+.section-projects {
+  padding: 4rem 0;
+  background-color: #1a3755;
+}
+.section-projects .section-title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+.section-projects p {
+  margin-bottom: 1rem;
+}
+/* CSS:PROJECTS-END */
+
+/* CSS:CONTACT-START */
+.section-contact {
+  padding: 4rem 0;
+  background-color: #0f2233;
+}
+.section-contact .section-title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+.section-contact p {
+  margin-bottom: 1rem;
+}
+/* CSS:CONTACT-END */
+
+/* CSS:RWD-START */
+@media (min-width: 768px) {
+  .section-hero h1 {
+    font-size: 3rem;
+  }
+  .section-about,
+  .section-skills,
+  .section-projects,
+  .section-contact {
+    padding: 6rem 0;
+  }
+  .section-about .container,
+  .section-projects .container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .section-about p,
+  .section-projects p {
+    flex: 1;
+  }
+}
+@media (min-width: 1440px) {
+  .section-hero h1 {
+    font-size: 4rem;
+  }
+}
+/* CSS:RWD-END */
+
+/* Header/Nav */
+.site-header {
+  position: sticky;
+  top: 0;
+  background-color: #0a1a2b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+.nav-link {
+  color: #e0e0e0;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: #4da8f7;
+}
