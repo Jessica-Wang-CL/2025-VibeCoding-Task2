@@ -3,118 +3,209 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>林佳穎 · 前端開發者個人品牌網站 — 技能與作品集展示</title>
     <meta
       name="description"
-      content="這是用來介紹個人背景、技能、作品集與聯絡方式的網站，幫助潛在客戶或雇主了解我的專業能力與經歷。"
+      content="林佳穎的個人品牌網站，展示前端開發技能、專業作品集與個人背景介紹。致力於打造乾淨、專業且使用者體驗良好的網頁應用程式。歡迎聯繫合作。"
     />
-    <title>Your Name · Frontend Dev</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="page">
       <header class="site-header">
         <div class="container">
-          <div class="nav">
-            <a href="#hero" class="nav-link">首頁</a>
-            <a href="#about" class="nav-link">關於我</a>
-            <a href="#skills" class="nav-link">技能</a>
-            <a href="#projects" class="nav-link">作品集</a>
-            <a href="#contact" class="nav-link">聯絡我</a>
-          </div>
+          <nav class="nav" aria-label="主要導覽">
+            <a href="#hero" class="logo">林佳穎 · Frontend Dev</a>
+            <ul class="nav-list">
+              <li><a href="#hero" class="nav-link">首頁</a></li>
+              <li><a href="#about" class="nav-link">關於我</a></li>
+              <li><a href="#skills" class="nav-link">技能</a></li>
+              <li><a href="#projects" class="nav-link">作品集</a></li>
+              <li><a href="#contact" class="nav-link">聯絡我</a></li>
+            </ul>
+          </nav>
         </div>
       </header>
 
       <main>
-        <!-- SECTION:HERO-START -->
         <section id="hero" class="section section-hero">
-          <h1 class="hero-title">歡迎來到我的個人網站</h1>
-          <p class="hero-description">
-            這是我的個人網站，展示了我的技能與作品。未來會加入更多內容，敬請期待！
-          </p>
-          <a href="#projects" class="hero-button">瀏覽我的作品集</a>
-          <p>
-            之後會用 Section SDD 的 Prompt 產生正式文案與版面，再把整個 section
-            貼回來取代這一區。
-          </p>
+          <div class="container hero-content">
+            <h1>我是林佳穎，專業前端開發者</h1>
+            <p class="hero-tagline">
+              嗨，這裡之後會放一句強而有力的自我介紹，強調我的核心職稱（Frontend
+              Developer）與專業價值。<br />
+              這裡是您個人網站的主視覺區。
+            </p>
+            <p>
+              之後會用 Section SDD 的 Prompt 產生正式文案與版面，請把新的
+              section 程式碼**整段貼在這兩個註解中間**，完全取代現在這一區。
+            </p>
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn">瀏覽作品集</a>
+              <a href="https://example.com/resume.pdf" class="btn"
+                >下載履歷 (占位)</a
+              >
+            </div>
+          </div>
         </section>
-        <!-- SECTION:HERO-END -->
-
-        <!-- SECTION:ABOUT-START -->
         <section
           id="about"
           class="section section-about"
           aria-labelledby="about-heading"
         >
           <div class="container">
-            <h2 id="about-heading" class="section-title">
-              關於我（之後會用 Section SDD 替換）
-            </h2>
-            <p>
-              這裡目前是 About 區的占位內容，之後會用另一個 Prompt
-              產生正式內容，請把新的 section 程式碼整段貼回來，取代這一區。
-            </p>
+            <h2 id="about-heading" class="section-title">關於我</h2>
+            <div class="about-grid">
+              <div class="about-image-wrapper">
+                <img
+                  src="https://source.unsplash.com/800x600/?developer,profile"
+                  alt="專注於筆電前撰寫程式碼的專業開發者，代表我的形象照"
+                  loading="lazy"
+                />
+              </div>
+              <div class="about-text">
+                <p>
+                  這裡目前是 About
+                  區的占位內容，將說明我的工作經歷、熱情與個人特質。
+                </p>
+                <p>
+                  我熱衷於將設計稿轉化為高效能、高可維護性的前端程式碼，並專注於優化使用者體驗與介面細節。
+                </p>
+                <p>
+                  之後會用 Section SDD 的 Prompt 產生更完整的內容，請把新的
+                  section 程式碼**整段貼在這兩個註解中間**，完全取代現在這一區。
+                </p>
+              </div>
+            </div>
           </div>
         </section>
-        <!-- SECTION:ABOUT-END -->
-
-        <!-- SECTION:SKILLS-START -->
         <section
           id="skills"
           class="section section-skills"
           aria-labelledby="skills-heading"
         >
           <div class="container">
-            <h2 id="skills-heading" class="section-title">
-              技能（之後會用 Section SDD 替換）
-            </h2>
+            <h2 id="skills-heading" class="section-title">核心技能</h2>
             <p>
-              這裡目前是 Skills 區的占位內容，之後會用另一個 Prompt
-              產生正式內容，請把新的 section 程式碼整段貼回來，取代這一區。
+              這裡目前是 Skills 區的占位內容，將展示我的技術棧、工具與專業能力。
+            </p>
+            <ul class="skill-list">
+              <li class="skill-item">HTML5 / CSS3</li>
+              <li class="skill-item">JavaScript (ES6+)</li>
+              <li class="skill-item">Vue / React (占位)</li>
+              <li class="skill-item">RWD / Mobile First</li>
+              <li class="skill-item">Git / GitHub</li>
+              <li class="skill-item">UI/UX 基礎</li>
+            </ul>
+            <p>
+              之後會用 Section SDD 的 Prompt 產生更完整的內容，請把新的 section
+              程式碼**整段貼在這兩個註解中間**，完全取代現在這一區。
             </p>
           </div>
         </section>
-        <!-- SECTION:SKILLS-END -->
-
-        <!-- SECTION:PROJECTS-START -->
         <section
           id="projects"
           class="section section-projects"
           aria-labelledby="projects-heading"
         >
           <div class="container">
-            <h2 id="projects-heading" class="section-title">
-              作品集（之後會用 Section SDD 替換）
-            </h2>
+            <h2 id="projects-heading" class="section-title">精選作品集</h2>
             <p>
-              這裡目前是 Projects 區的占位內容，之後會用另一個 Prompt
-              產生正式內容，請把新的 section 程式碼整段貼回來，取代這一區。
+              這裡目前是 Projects
+              區的占位內容，將展示我過去最引以為傲的專案成果。
+            </p>
+            <div class="project-grid">
+              <article class="project-card">
+                <img
+                  src="https://source.unsplash.com/1200x800/?website,dashboard"
+                  alt="一個展示專案儀表板介面的螢幕截圖"
+                  loading="lazy"
+                />
+                <div class="project-info">
+                  <h3>專案名稱 A (占位)</h3>
+                  <p>
+                    這是一個說明專案目標與使用技術的簡短介紹。之後會用更詳細的卡片設計取代。
+                  </p>
+                  <a href="https://example-project-a.com" class="btn"
+                    >前往專案 (占位)</a
+                  >
+                </div>
+              </article>
+              <article class="project-card">
+                <img
+                  src="https://source.unsplash.com/1200x800/?e-commerce,app"
+                  alt="一個展示電子商務網站手機版介面的截圖"
+                  loading="lazy"
+                />
+                <div class="project-info">
+                  <h3>專案名稱 B (占位)</h3>
+                  <p>
+                    這個專案著重於 RWD
+                    與使用者購物流程的優化。之後會用更詳細的卡片設計取代。
+                  </p>
+                  <a href="https://example-project-b.com" class="btn"
+                    >前往專案 (占位)</a
+                  >
+                </div>
+              </article>
+            </div>
+            <p style="margin-top: 2rem">
+              之後會用 Section SDD 的 Prompt 產生更完整的內容，請把新的 section
+              程式碼**整段貼在這兩個註解中間**，完全取代現在這一區。
             </p>
           </div>
         </section>
-        <!-- SECTION:PROJECTS-END -->
-
-        <!-- SECTION:CONTACT-START -->
         <section
           id="contact"
           class="section section-contact"
           aria-labelledby="contact-heading"
         >
-          <div class="container">
-            <h2 id="contact-heading" class="section-title">
-              聯絡我（之後會用 Section SDD 替換）
-            </h2>
+          <div class="container contact-info">
+            <h2 id="contact-heading" class="section-title">聯絡我</h2>
             <p>
-              這裡目前是 Contact 區的占位內容，之後會用另一個 Prompt
-              產生正式內容，請把新的 section 程式碼整段貼回來，取代這一區。
+              這裡目前是 Contact
+              區的占位內容，將提供各種聯繫管道，歡迎您隨時與我聯繫。
+            </p>
+            <ul class="social-links">
+              <li>
+                <a href="mailto:hello@frontend-dev.com" class="nav-link"
+                  >電子郵件 (占位)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/your-dev-name"
+                  target="_blank"
+                  class="nav-link"
+                  >GitHub (占位)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/your-dev-name"
+                  target="_blank"
+                  class="nav-link"
+                  >LinkedIn (占位)</a
+                >
+              </li>
+              <li>
+                <a href="tel:+886900000000" class="nav-link">電話 (占位)</a>
+              </li>
+            </ul>
+            <p style="margin-top: 2rem">
+              之後會用 Section SDD 的 Prompt 產生更完整的內容，請把新的 section
+              程式碼**整段貼在這兩個註解中間**，完全取代現在這一區。
             </p>
           </div>
         </section>
-        <!-- SECTION:CONTACT-END -->
       </main>
 
       <footer>
         <div class="container">
-          <p>© 2025 Your Name · Frontend Developer</p>
+          <p>
+            &copy; 2025 林佳穎 · Frontend Dev. All rights reserved. | 骨架由 AI
+            根據工程師規格書建立。
+          </p>
         </div>
       </footer>
     </div>
